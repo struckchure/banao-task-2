@@ -1,0 +1,36 @@
+.controller-container {
+  width: 15rem;
+  height: auto;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  z-index: 10;
+
+  svg {
+    clip-path: circle();
+    display: block;
+    position: absolute;
+
+    path {
+      transition: 1s;
+    }
+
+    g {
+      cursor: pointer;
+    }
+  }
+}
+
+.animation {
+  animation: anim forwards 1s;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
